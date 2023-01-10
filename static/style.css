@@ -88,6 +88,10 @@ input:focus{
     border: 2px solid #C26868;
 }
 
+input:required:focus:invalid {
+    background-color: #fdd;
+}
+
 
 .cta-container {
     padding: 2rem 2rem;
@@ -118,6 +122,11 @@ a {
     text-decoration: none;
     color: #C26868;
     font-weight: 700;
+}
+
+.error, .errorConfirm {
+    font-size: 0.8rem;
+    color: red;
 }
 
 

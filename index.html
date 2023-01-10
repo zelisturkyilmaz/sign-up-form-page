@@ -41,13 +41,14 @@
                     <input type="tel" id="phoneNumber" name="phoneNumber">
                 </div>
                 <div class="form-row">
-                    <label for="userPassword">PASSWORD</label>
-                    <input type="password" id="userPassword" name="userPassword" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  required>
-                    <p class="help"></p>
+                    <label for="userPassword">*PASSWORD</label>
+                    <input type="password" id="userPassword" name="userPassword" minlength="8"  required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div class="form-row">
-                    <label for="userPasswordConfirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="userPasswordConfirm" name="userPasswordConfirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  required>
+                    <label for="userPasswordConfirm">*CONFIRM PASSWORD</label>
+                    <input type="password" id="userPasswordConfirm" name="userPasswordConfirm" minlength="8"  required>
+                    <span class="errorConfirm" aria-live="polite"></span>
                 </div>
             </div>
             <div class="cta-container">
